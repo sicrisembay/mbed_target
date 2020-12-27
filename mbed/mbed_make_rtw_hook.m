@@ -66,7 +66,7 @@ switch hookMethod
         % arguments are valid at this stage.
         %disp('before_make');
         i_write_mbed_files();
-        disp(sprintf(['\n### Code Format : %s'],buildOpts.codeFormat));%#ok
+        %disp(sprintf(['\n### Code Format : %s'],buildOpts.codeFormat));%#ok
         %disp('before_make out');
         
     case 'after_make'
