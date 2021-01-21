@@ -113,7 +113,7 @@ end
 lines=strfind(out,10);
 where = out(1:lines(1)-1);
 [status,out]=system('python --version');
-if status ~= 0 OR isempty(strfind(out,'2.7'))
+if status ~= 0 || isempty(strfind(out,'2.7'))
     ok = false;
 else
     ok = true;
